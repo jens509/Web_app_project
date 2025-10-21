@@ -138,6 +138,15 @@ CREATE TABLE niveau_etude (
     description TEXT
 );
 
+-- Table Utilisateur
+CREATE TABLE utilisateur (
+    id_utilisateur SERIAL PRIMARY KEY,
+    username VARCHAR(100) UNIQUE NOT NULL,
+    password TEXT NOT NULL,
+    role VARCHAR(50) DEFAULT 'employe'
+);
+
+
 
 -- TABLES D'ASSOCIATION POUR LES RELATIONS
 

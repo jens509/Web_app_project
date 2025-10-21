@@ -20,6 +20,7 @@ const SalaireRoutes = require("./routes/SalaireRoutes");
 const NoteEmployeRoutes = require("./routes/NoteEmployeRoutes");
 const BACRoutes = require("./routes/BACRoutes");
 const NiveauEtudeRoutes = require("./routes/NiveauEtudeRoutes");
+const AuthRoutes = require("./routes/AuthRoutes");
 
 
 //importation des routes des entites associations
@@ -64,6 +65,8 @@ app.use("/api/salaires", SalaireRoutes);
 app.use("/api/notes", NoteEmployeRoutes);
 app.use("/api/niveaux-etude", NiveauEtudeRoutes);
 app.use("/api/directions-generales", DirectionGeneraleRoutes);
+app.use("/api/auth",AuthRoutes);
+
 
 //utilisation des Routes des entites associations
 // Routes des associations

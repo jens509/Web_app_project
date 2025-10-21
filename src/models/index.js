@@ -15,6 +15,7 @@ const Salaire = require("./Salaire");
 const NoteEmploye = require("./NoteEmploye");
 const BAC = require("./BAC");
 const NiveauEtude = require("./NiveauEtude");
+const Utilisateur = require("./utilisateur");
 
 // modèles d'association
 const EstAssigneADirectionGenerale = require("./EstAssigneADirectionGenerale");
@@ -271,6 +272,7 @@ module.exports = {
   NoteEmploye,
   BAC,
   NiveauEtude,
+  Utilisateur,
   EstAssigneADirectionGenerale,
   EstAssigneAStructure,
   EstAssigneACoordination,
