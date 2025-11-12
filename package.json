@@ -13,6 +13,12 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^7.3.5",
+    "@mui/lab": "^7.0.1-beta.19",
+    "@mui/material": "^7.3.5",
+    "axios": "^1.13.2",
     "bcrypt": "^6.0.0",
     "cors": "^2.8.5",
     "dotenv": "^17.2.2",
@@ -23,6 +29,7 @@
     "morgan": "^1.10.1",
     "pg": "^8.16.3",
     "pg-hstore": "^2.3.4",
+    "react-router-dom": "^7.9.5",
     "sequelize": "^6.37.7"
   },
   "devDependencies": {
