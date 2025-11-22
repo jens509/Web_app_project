@@ -12,3 +12,5 @@ yarn-error.log
 *.launch
 .settings/
 *.sublime-workspace
+node_modules
+node_modules
