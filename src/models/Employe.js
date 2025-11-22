@@ -2,7 +2,7 @@ const { DataTypes } = require("sequelize");
 const sequelize = require("../config/sequelize");
 
 const Employe = sequelize.define("Employe", {
-  id_employe: { type: DataTypes.INTEGER, primaryKey: true },
+  id_employe: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
   nom: { type: DataTypes.STRING(25), allowNull: true },
   prenom: { type: DataTypes.STRING(50), allowNull: true },
   code: { type: DataTypes.STRING(50), allowNull: true },

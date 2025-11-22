@@ -1,8 +1,9 @@
+
 -- Database: Ressource_ODVA
 
--- DROP DATABASE IF EXISTS "Ressource_ODVA";
+-- DROP DATABASE IF EXISTS "base_odva";
 
-CREATE DATABASE "Ressource_ODVA"
+CREATE DATABASE "base_odva"
     WITH
     OWNER = postgres
     ENCODING = 'UTF8'

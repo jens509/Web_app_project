@@ -22,6 +22,10 @@ const BACRoutes = require("./routes/BACRoutes");
 const NiveauEtudeRoutes = require("./routes/NiveauEtudeRoutes");
 const AuthRoutes = require("./routes/AuthRoutes");
 
+// Swagger
+const swaggerUi = require("swagger-ui-express");
+const swaggerSpec = require("./swagger");
+
 
 //importation des routes des entites associations
 
@@ -66,6 +70,15 @@ app.use("/api/notes", NoteEmployeRoutes);
 app.use("/api/niveaux-etude", NiveauEtudeRoutes);
 app.use("/api/directions-generales", DirectionGeneraleRoutes);
 app.use("/api/auth",AuthRoutes);
+
+// Serve Swagger UI at /api-docs
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+
+// Optional: serve raw OpenAPI JSON at /api-docs.json
+app.get("/api-docs.json", (req, res) => {
+  res.setHeader("Content-Type", "application/json");
+  res.send(swaggerSpec);
+});
 
 
 //utilisation des Routes des entites associations
